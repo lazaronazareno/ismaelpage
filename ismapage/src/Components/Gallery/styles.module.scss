@@ -1,0 +1,70 @@
+.slider {
+    width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid grey;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  %btn-styles {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 100%;
+    background: none;
+    border: none;
+    transition: 0.5s;
+     &:hover {
+       background: #5d9bb0;
+     }
+  }
+  
+  .goLeft {
+    left: 0;
+    @extend %btn-styles;
+  }
+  
+  .arrowLeft {
+    transform: rotate(90deg);
+  }
+  
+  .goRight {
+    right: 0;
+    @extend %btn-styles;
+  }
+  
+  .arrowRight {
+    transform: rotate(-90deg);
+  }
+  
+  .image {
+    width: 60%;
+    height: inherit;
+  }
+  
+  .marca {
+    text-align: center;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    font-size: xxx-large;
+    margin: 0;
+  }

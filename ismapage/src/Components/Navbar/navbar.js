@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 function Navbar() {
   return (
     <div className={styles.div}>
-      <img className={styles.logo} src={image} />
+      <img className={styles.logo} src={image} alt="logo" />
       <h2 className={styles.name}>10SA</h2>
     </div>
   );

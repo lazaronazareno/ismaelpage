@@ -17,7 +17,7 @@ export default function Facepage() {
         data-width="500px"
         data-height=""
         data-small-header="false"
-        data-adapt-container-width="false"
+        data-adapt-container-width="true"
         data-hide-cover="false"
         data-show-facepile="true"
       >

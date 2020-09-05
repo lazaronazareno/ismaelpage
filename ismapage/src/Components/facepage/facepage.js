@@ -9,7 +9,7 @@ export default function Facepage() {
 
   return (
     <div className={styles.div}>
-      <h1 className={styles.subtitle}>Visita nuestra pagina de Facebook</h1>
+      <h1 className={styles.subtitle}>Visita nuestra pagina de Facebook!</h1>
       <div
         className="fb-page"
         data-href="https://www.facebook.com/10SA-105144964655533/"
@@ -27,7 +27,7 @@ export default function Facepage() {
           </blockquote>
         </div>
       </div>
-      <h1 className={styles.subtitle}>Envíanos un mensaje, tu consulta no molesta!</h1>
+      <h1 className={styles.subtitle}>Envíanos un mensaje!</h1>
     </div>
   );
 }

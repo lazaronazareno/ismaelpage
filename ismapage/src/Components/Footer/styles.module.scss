@@ -1,5 +1,17 @@
 .div {
-    background-color: #5d9bb0;
+    background-color: #4b7e91;
     display: flex;
     flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: flex-start;
+}
+
+.name {
+    color: white;
+    font-weight: 700;
+    font-size: 3.5vh;
+}
+
+.logo {
+    width: 5%;
 }

@@ -1,0 +1,18 @@
+.div{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgb(62 109 107 / 74%);
+}
+
+.image{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    transition: 0.5s;
+    &:hover {
+        opacity: 0.6;
+      }
+}

@@ -1,13 +1,60 @@
 .div {
-    background-color: #5d9bb0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leafdiv{
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.image{
+    width: inherit;
+    height: inherit;
+    transform: rotate(180deg);
+    &:hover {
+        transform: rotate(180deg);
+        animation: shake-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        @keyframes shake-horizontal {
+        0%,
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: rotate(180deg) translateX(0);
+        }
+        10%,
+        30%,
+        50%,
+        70% {
+          -webkit-transform: translateX(-10px);
+                  transform: rotate(180deg) translateX(-10px);
+        }
+        20%,
+        40%,
+        60% {
+          -webkit-transform: translateX(10px);
+                  transform: rotate(180deg) translateX(10px);
+        }
+        80% {
+          -webkit-transform: translateX(8px);
+                  transform: rotate(180deg) translateX(8px);
+        }
+        90% {
+          -webkit-transform: translateX(-8px);
+                  transform: rotate(180deg) translateX(-8px);
+        }
+      }
+}
+}
+
 .subtitle {
-    margin: 100px;
-    color: white;
+    color: black;
     font-style: italic;
-    font-size: 4.5vh;
+    font-size: larger;
+    margin: 0;
+    position: absolute;
+    width: min-content;
 }

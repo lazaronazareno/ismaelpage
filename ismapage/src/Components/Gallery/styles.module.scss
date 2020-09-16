@@ -1,6 +1,8 @@
 .slider {
-    width: 100%;
-    height: 90vh;
+    width: 800px;
+    height: 600px;
+    background: rgba(0.256, 0, 0, 0.256);
+    border-radius: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,20 +29,20 @@
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%);
-    width: 10%;
-    height: 100%;
+    width: 125px;
+    height: 250px;
     background: none;
     border: none;
     outline: none;
     transition: 0.5s;
-     &:hover {
-       background: #4b7e91;
-       border: none;
+    &:hover {
+      background: rgba(0.356, 0, 0, 0.356);
+      border: none;
      }
   }
   
   .goLeft {
-    left: 0;
+    left: 35px;
     @extend %btn-styles;
   }
   
@@ -49,7 +51,7 @@
   }
   
   .goRight {
-    right: 0;
+    right: 35px;
     @extend %btn-styles;
   }
   
